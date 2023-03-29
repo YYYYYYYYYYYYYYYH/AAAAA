@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #wrapper1{
+      display: grid;
+      /* 화면을 꽉 채우는 컬럼을 너비 크기로 늘려서 표시 */
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+    #wrapper2{
+      display: grid;
+      /* 컬럼의 최소 너비만큼 표시 */
+      grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    }
+    h1{
+      font-size: 1px;
+    }
+    .items{
+      padding: 15px;
+      background-color:aquamarine;
+    }
+    .items:nth-child(odd){
+      background-color:red;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <h1>auto-fit일 경우</h1>
+  <div id="wrapper1">
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+      [출처] 34평 신혼집 온라인 랜선 집들이 (feat. 필름 시공, 조명의 힘)|작성자 라라랑
+    </div>
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+      [출처] 34평 신혼집 온라인 랜선 집들이 (feat. 필름 시공, 조명의 힘)|작성자 라라랑
+    </div>
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+      [출처] 34평 신혼집 온라인 랜선 집들이 (feat. 필름 시공, 조명의 힘)|작성자 라라랑
+    </div>
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+      [출처] 34평 신혼집 온라인 랜선 집들이 (feat. 필름 시공, 조명의 힘)|작성자 라라랑
+    </div> 
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+      [출처] 34평 신혼집 온라인 랜선 집들이 (feat. 필름 시공, 조명의 힘)|작성자 라라랑
+    </div>
+  
+
+  </div>
+
+  <h1>auto-fill일 경우</h1>
+  <div id="wrapper2">
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+      [출처] 34평 신혼집 온라인 랜선 집들이 (feat. 필름 시공, 조명의 힘)|작성자 라라랑
+    </div>
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+      [출처] 34평 신혼집 온라인 랜선 집들이 (feat. 필름 시공, 조명의 힘)|작성자 라라랑
+    </div>
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+      [출처] 34평 신혼집 온라인 랜선 집들이 (feat. 필름 시공, 조명의 힘)|작성자 라라랑
+    </div>
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+      [출처] 34평 신혼집 온라인 랜선 집들이 (feat. 필름 시공, 조명의 힘)|작성자 라라랑
+    </div> 
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+      [출처] 34평 신혼집 온라인 랜선 집들이 (feat. 필름 시공, 조명의 힘)|작성자 라라랑
+    </div>
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    /*
+      화살표함수 (Arrow Function)
+      
+    */
+    // 1. 매개변수가 없을 겨우
+    let hi = function () {
+      return '안녕하세요(1)';
+    }
+    
+    hi = () => { return '안녕하세요?(2)'; };
+    hi = () => { '안녕하세요(3)' }
+    hi = () => '안녕하세요(4)';
+    console.log(hi());
+
+    // 2. 매개변수가 한개만 있을 경우
+    let sayHello = function(name) { return name + '님 안녕하세요(1)?'}
+
+    sayHello = (name) => { return name + '님 안녕하세요(2)?'}
+    sayHello = name => { return `${name}님 안녕하세요(3)?`}
+    sayHello = name => `${name}님 안녕하세요(4)?`
+
+    console.log(sayHello('홍길동'));
+    
+    // 3. 매개변수가 한개이상 있을 경우
+    let 더하기 = function add(a, b) { return a + b }
+    더하기 = (a, b) => a + b; 
+
+    console.log(더하기(10, 10));
+    
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

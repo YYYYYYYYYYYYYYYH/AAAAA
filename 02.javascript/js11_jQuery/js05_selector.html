@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <title>Document</title>
+  <script>
+    //속성 선택자
+    // 1. input 태그의 속성 type이 text 의 value 을 'Hello Jquery' 입력 
+    //   css(), val()
+    // 2. select 태그의 선택된 option 의 값을 3초마다 alert 으로 출력 하기 
+    $(function() {
+      $('input[type=text]').val('Hello jQuery!!');
+      setInterval(() => {
+        let value = $('select > option:selected').val();
+        alert(value);
+      }, 3000);
+    })
+  </script>
+</head>
+<body>
+  <input type="text">
+  <input type="checkbox">
+
+  <select name=" " id="">
+    <option value="Apple">Apple</option>
+    <option value="Dog">dog</option>
+    <option value="Cat">cat</option>
+    <option value="Horse">horse</option>
+  </select>
+  
+</body>
+</html>

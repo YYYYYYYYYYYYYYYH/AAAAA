@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    /*
+      브라우저객체모델(BOM, Browser Object Model)
+
+      BOM은 웹브라우저와 관련된 객체의 집합객체를 의미한다. 
+      BOM은 window > screen, location, navigator, histroy, document가 있다.
+      간단하게 문서객체모델(DOM, Document Object Model)이라 통합해서 브르기도 한다.
+    */
+    document.write(typeof window + ' = ' + window, '<br>');
+
+    for(let key in window) {
+      document.write(`${key} = ${window[key]}<br>`)
+    }
+
+    // window.alert('경고창함수는 window객체의 메서드중 하나이다!!');
+    /*
+      window 객체는 브라우저 기반의 모델에서 최상위 객체이다.
+      alert, prompt함수등은 모두 window객체의 메서드이다.
+
+      window객체의 메서드
+      
+      1. open() : 새로운 window객체를 생성
+        a. url : url 주소
+        b. width, height : 윈도우의 크기
+        c. child : 자식창(별도의 창)
+         d. loacation, menubar, resizeable, status, toolbar (yse, no/ 1. 0)
+      2. moveBy(x, y) : 윈도우를 상대 위치로 이동
+      3. moveTo(x, y) : 윈도우를 절대 위치로 이동
+      4. resizeBy(x, y) : 윈도우를 상대 크기 조정
+      5. resizeRo(x, y) : 윈도우를 절대 크기 조정
+      6. scrollBy(x, y) : 스크롤바를 상대 위치로 이동
+      7. scrollTo(x, y) : 스크롤바를 절대 위치로 이동
+      8. focus() : 윈도우에 초점을 이동
+      9. blur()  : 윈도우에서 초점을 제거
+     10. close() : 윈도우를 닫음 
+
+    */
+
+    // window.open('http://www.naver.com', 'child', 'width=200 height=200');
+    let childWindow = window.open('', '', 'width=300 height=300');
+    childWindow.moveTo(0,0);
+    childWindow.document.write('<h1>window.open() 메서드</h1>');
+
+    // 실습. childWindow를 1초마다 x,y좌표를 10씩 이동하기
+    // setInterval()함수를 이용
+    setInterval(function() {
+      childWindow.moveBy(10,10)
+    },1000);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

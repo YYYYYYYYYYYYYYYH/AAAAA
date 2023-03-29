@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #wrapper {
+      display: grid;
+      grid-template-columns: repeat(3,200px); /*너비가 200px 인 컬럼 3개*/
+      grid-template-rows: minmax(100px,auto);
+      grid-gap: 20px 30px; /*줄간격 20px, 컬럼간격 30px*/
+      /* grid-column-gap:30px ;  */
+      /* grid-row-gap: 20px; */
+    }
+    .items{
+      padding: 15px;
+      background-color: red;
+    }
+    .items:nth-child(odd){
+      background-color: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+    </div>
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+    </div>
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+    </div>
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+    </div>
+    <div class="items">
+      이 글은 집 인테리어에 획일된 색상이 얼마나 중요한지,
+      그리고 조명과 커튼이 분위기 몫을 얼마나 담당하는지 알리는 글이에요.
+    </div>
+  </div>
+</body>
+</html>

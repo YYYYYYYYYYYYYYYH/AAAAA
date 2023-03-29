@@ -1,0 +1,118 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #b9b993;;
+    
+
+}
+.loginb {
+    position: absolute ;
+    right: 60px;
+    top: 20px;
+    text-decoration: none;
+    color: black;
+    color: inherit;
+}
+.loginb:link {
+    text-decoration: none;
+    color: black;
+}
+.loginb:hover {
+    text-decoration: none;
+    color: black;
+}
+.loginb:active {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* 사이드바 */
+.ham {
+    padding: 10px;
+    margin: 10px;
+    font-size: 50px;
+    color: black;
+
+}
+.sidenav {
+    height: 2023px;
+    width: 0;
+    position: absolute ;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity : 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 999;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+
+.carousel-inner img {
+    width: auto;
+    margin: auto;
+}
+
+.carousel-inner img {
+    width: 2000px;
+    height: 500px;
+}
+
+a#MOVE_TOP_BTN {
+    position: fixed;
+    right: 2%;
+    bottom: 50px;
+    display: none;
+    z-index: 999;
+}
+
+#MOVE_TOP_BTN:hover {
+    text-decoration: none;
+    color: black;
+}
+#MOVE_TOP_BTN:active {
+    text-decoration: none;
+    color: black;
+}
+#MOVE_TOP_BTN {
+    color: black;
+
+}
+
+.a {
+position: absolute;
+bottom: 0px;
+left: 50%;
+transform: translateX(-50%);
+
+}
+
+

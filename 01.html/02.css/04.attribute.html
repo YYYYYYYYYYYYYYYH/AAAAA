@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+      /* input에서 속성 text인 태그의 배경색을 red */
+      input[type="text"] {
+        background: red;
+      }
+      /* input에서 속성 password인 태그의 배경색을 blue */
+
+      input[type="password"] {
+        background: blue;
+      }
+
+
+    img[src$="jpg"] {
+      border: 3px solid red;
+    }
+    img[src$="png"] {
+      border: 3px solid blue;
+    }
+    img[src$="gif"] {
+      border: 3px solid green;
+    }
+    img[src^="a"] {
+      border: 10px solid green;
+    }
+    img[src*="ab"] {
+      border: 10px dashed purple;
+    }
+    /* $="zzz" : zzz로 끝나는
+       ^="zzz" : zzz로 시작
+       *="zzz" : zzz 들어있는*/
+  </style>
+
+</head>
+<body>
+  <input type="text"> <br>
+  <input type="password"> <br>
+
+
+  <img src="aaaa.jpg" alt="" width="200" height="200" /><br />
+  <img src="abbb.png" alt="" width="200" height="200" /><br />
+  <img src="accc.gif" alt="" width="200" height="200" /><br />
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    /*
+    증강연산자 (1씩 증가/감소)
+    ++a : a=a+1; // 전위 증강 연산자
+    --a : a=a-1; // 전위 감소 연산자
+    a++ : a=a+1; // 후위 증강연산자
+    a-- : a=a-1; // 후위  감소 연산자
+    */
+
+    let number = 10;
+    number++; // number = number+1;
+    console.log(number); // 11 
+    number--; // number = number-1;
+    console.log(number); //10
+    
+    ++number; // number = number+1;
+    console.log(number); // 11 
+    --number; // number = number-1;
+    console.log(number); //10
+
+    // 주의할 점 
+    console.log('후위연산자(++) =',number++ ); //10 -> 먼저 10을 출력하고 후에 1을 증가 
+    console.log('전위연산자(++) =',++number ); //11 -> 먼저 1을 증가 후에 출력
+
+
+    number = 10;
+    document.write (number++ + '<br>' ); // 10
+    document.write (++number + '<br>' ); // 12
+    document.write (number-- + '<br>' ); // 12
+    document.write (--number + '<hr>' ); // 10
+
+  </script>
+
+
+
+</head>
+<body>
+  <button onclick="counter.innerHTML = ++count;">+1 증가</button>
+  <button onclick="counter.innerHTML = --count;">-1 감소</button>
+
+  <h1 id="counter">0</h1>
+
+  <script>
+    // 실습. 버튼을 클릭하면 1씩 증가시키는 로직 만들기
+    let count = 0;
+    let counter = document.querySelector('#counter');
+  </script>
+
+</body>
+</html>

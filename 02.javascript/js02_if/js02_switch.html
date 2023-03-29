@@ -1,0 +1,51 @@
+<script>
+  // 1. switch 조건문
+  let num = 2;
+
+if (Number(num) % 2 == 0) document.write('짝수 입니다!');
+else document.write('홀수 입니다!!');
+document.write('<hr>');
+
+switch ((num %= 2)) {
+  case 0:
+    document.write('짝수 입니다!<br>');
+    break;
+  case 1:
+    document.write('홀수 입니다!!<br>');
+    break;
+  default:
+    document.write('숫자가 아닙니다!!<br>');
+}
+
+
+      //실습2 . if else if~ : score (점수)를 입력받아서 95이상이면 'A+ 학점 입니다' 90이상이면 'A0 학점 입니다'
+    // 85 B+ , 80 B0,....75 C+ , 70 C0, 60이상이면 D 학점 , 60미만이면 F 학점입니다 
+    let score = 95;
+  switch (true) {
+    case score >= 95:
+      document.write('A+학점 입니다!<br>');
+      break;
+    case score >= 90:
+      document.write('A0학점 입니다!<br>');
+      break;
+    case score >= 85:
+      document.write('B+학점 입니다!<br>');
+      break;
+    case score >= 80:
+      document.write('B0학점 입니다!<br>');
+      break;
+    case score >= 75:
+      document.write('C+학점 입니다!<br>');
+      break;
+    case score >= 70:
+      document.write('C0학점 입니다!<br>');
+      break;
+    case score >= 60:
+      document.write('D 학점 입니다!<br>');
+      break;
+    default:
+      document.write('F 학점 입니다!<br>');
+  }
+
+
+</script>

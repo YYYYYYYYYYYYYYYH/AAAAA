@@ -1,0 +1,1 @@
+alert('javascript-외부파일:Hello')

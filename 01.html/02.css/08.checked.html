@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* input태그의 checkbox태그의 check여부 */
+      input[type="checkbox"]:checked + div {
+        height: 0px;
+      }
+      div {
+        overflow: hidden;
+        width: 650px;
+        height: 300px;
+        transition-duration: 1s;
+         /* ms 엣지 webkit 크롬 moz 파폭  */
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" />
+    <div>
+      <p>
+        We can divide CSS selectors into five categories: Simple selectors
+        (select elements based on name, id, class) Combinator selectors (select
+        elements based on a specific relationship between them) Pseudo-class
+        
+      </p>
+    </div>
+  </body>
+</html>

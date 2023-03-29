@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <title>Document</title>
+  <script>
+    /* jQuery Effect
+
+    A. effect method
+
+    show() : 문서객체를 보이게 하기
+    hide() : 문서객체를 보이게 하기
+    toggle() : show() hide()번갈아 수행
+    slideDown() : 슬라이드효과 보이기
+    slideUp() : 슬라이드효과 감추기
+    slideToggle() : slidedown, slideup 번갈아 수행
+    fadeIn() : 서서히 보이기
+    fadeOut(): 서서히 감추기
+    fadeToggle() : fadein, fadeout 번갈아 수행
+    
+    B. effect 메서드 4가지형태
+
+    1. $(선택자).method()
+    2. $(선택자).method(speed) : slow, normal, fast, 숫자(ms)
+    3. $(선택자).method(speed, 콜백함수) : 효과가 수행되는 수행되는
+    동안 수행할 함수(callback 함수)를 지정, 함수수행결과가 리턴
+    4. $(선택자).method(speed, easing, 콜백함수) : easing 애니메이션효과 적용 
+    */
+  $(function() {
+    $('button').click(() => {
+      $('.page').toggle(1000, () => alert('jQuery Effect'));
+    })
+  })
+  </script>
+</head>
+<body>
+  <button>jQuery Effect - toggle</button>
+  <div class="page">
+    <h1>이강인 원하는 ‘새 팀’ 나왔다... 감독이 직접 '영입 요청'</h1>
+    <p>올여름 이적시장에선 이강인(22·마요르카)을 품기 위한 ‘영입 전쟁’이 펼쳐질 전망이다. 앞서 잉글랜드와 스페인을 중심으로 이적설이 제기됐던 가운데, 이번에는 스페인 레알 소시에다드도 이강인의 영입전 참전을 결단한 것으로 전해졌다.
+      스페인 엘골디히탈은 13일(한국시간) “지난겨울 이적시장에선 이강인이 여러 제안을 받고도 마요르카 구단의 반대로 무산됐지만, 올여름엔 모든 것이 바뀔 것”이라며 “다른 유럽 명문 구단들뿐만 아니라 소시에다드도 이강인 영입에 나설 것이 확실시되고 있다. 이마놀 알과실 감독이 이미 구단 이사회에 이강인의 영입을 요청했다”고 전했다.</p>
+  </div>
+</body>
+</html>

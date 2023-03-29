@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <title>Document</title>
+  <script>
+    $(function() {
+      $('h1').css('color', 'red'); // getElementTagName('h1').css()
+      $('p').css('color', 'purple');
+      $('#target').css('color', 'orange');
+      $('h1#target').css('color', 'mediumseagreen');
+    });
+
+
+  </script>
+  <!-- <style>
+    h1 {color : red;}
+    h1#target {color: green;}
+  </style> -->
+</head>
+<body>
+  <h1> 운동이 자극한 침샘
+  </h1>
+  <p>조수진 국민의힘 최고위원이 그간 각을 세웠던 이준석 전 대표 측과는 화합을 이룰 수 없다고 밝혔다.
+
+    조 최고위원은 9일 CBS라디오와의 인터뷰에서 "유승민 전 대표나 이준석 전 당대표를 보면 이재명 대표가 할 일을 그 두 분이 하고 있어 문제가 된다"며 이 같이 밝혔다.
+    
+    그러면서 조 최고위원은 "지금 유승민 전 대표나 이준석 전 대표를 우리 당 사람이라고 생각하는 분이 얼마나 있을까"라며 "저는 그게 큰 문제라고 생각한다"고 밝혔다. </p>
+  <p id="target">
+    조수진 국민의힘 최고위원이 그간 각을 세웠던 이준석 전 대표 측과는 화합을 이룰 수 없다고 밝혔다.
+
+조 최고위원은 9일 CBS라디오와의 인터뷰에서 "유승민 전 대표나 이준석 전 당대표를 보면 이재명 대표가 할 일을 그 두 분이 하고 있어 문제가 된다"며 이 같이 밝혔다.
+
+그러면서 조 최고위원은 "지금 유승민 전 대표나 이준석 전 대표를 우리 당 사람이라고 생각하는 분이 얼마나 있을까"라며 "저는 그게 큰 문제라고 생각한다"고 밝혔다.
+  </p>
+  <h1 id="target">조 최고위원은 유승민 전 의원과 이준석 전 대표가 중도층에게</h1>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<script>
+  var i, j;//변수 i, j 선언(반복문에 사용할...)
+  var memNum = prompt("입장객은 몇 명인가요?");  // 전체 입장객 
+  var colNum = prompt("한 줄에 몇 명씩 앉습니까?");  // 한 줄에 앉을 사람
+
+  if (memNum % colNum == 0) //만약 전체 입장객을 한줄에 앉을 사람으로 나눈 나머지가 0이라면
+    rowNum = parseInt(memNum / colNum); // 전체 입장객을 한줄에 앉을 사람으로 나눈 몫을 정수로 rowNum 변수에 대입
+  else // 나머지가 있다면
+    rowNum = parseInt(memNum / colNum) + 1; // // 전체 입장객을 한줄에 앉을 사람으로 나눈 몫을 정수로 만들어
+                                            // 1을 더하기(= 나머지가 있으니 1줄 더 추가)
+
+  // document.write("모두 " + rowNum + "개의 줄이 필요합니다.");
+
+  document.write("<table>");//문서에 <table> 태그 쓰기
+  for (i = 0; i < rowNum; i++) {//변수 rowNum의 수만큼 반복(i 값은 0부터 시작)
+    document.write("<tr>");//문서에 <tr> 태그 쓰기
+    for (j = 1; j <= colNum; j++) {//변수 colNum의 수만큼 반복(j 값은 1부터 시작)
+      seatNo = i * colNum + j;    //좌석번호(일렬번호) 만들기 //rowNum 만큼 반복좌석 번호
+      if (seatNo > memNum) break;//만약 seatNo가 memNum보다 크다(초과)면 j 반복문 중지 
+      document.write("<td> 좌석 " + seatNo + " </td>");//문서에 <td>좌석 번호 </td> 태그 쓰기
+    }//for(j)문 반복 종류
+    document.write("</tr>");//문서에 </tr> 태그 쓰기
+  }//for(j)문 반복 종류
+  document.write("</table>");//문서에 </table> 태그 쓰기
+</script>

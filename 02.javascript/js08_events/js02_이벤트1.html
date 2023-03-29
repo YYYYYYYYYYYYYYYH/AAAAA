@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.onload = function() {
+
+      function whenClick() {
+        alert('문서객체가 클릭이 되었습니다!!!')
+      }
+      function clickDel() {
+        cut
+      }
+      
+      
+
+
+
+      // 1. 이벤트추가
+      let header1 = document.querySelector('#header1');
+      header1.onclick = whenClick;
+      let header2 = document.querySelector('#header2');
+      header2.onclick = whenClick;
+
+
+      // 2. 이벤트삭제
+      header2.onclick = null;
+      
+      // 3. 실습1. 
+      // header3태그를 클릭하면 해당 객체가 삭제가 되는 onclick이벤트를 작성해 보세요
+
+      // 실습2.
+      // 임의의 img태그를 클릭하면 상세설명내용(p태그)과 상세설명닫기버튼 이 나타내게 
+      // 하고 상세내용닫기버튼을 클릭하면 상세내용이 숨겨지는 이벤트를 작성하세요
+      
+      // 실습3. button클릭시에 눌린횟수를 카운트하기
+			// button-1을 클릭하면 2개가 동시에 카운트되고
+			// button-2를 클릭하면 button-2의 횟수만 카운트하기
+			// getElementById(), Number(), innerHTML, Number()
+			// button1.onclick -> button2.onclick을 호출
+
+    }
+
+  </script>
+</head>
+<body>
+  <h3 id="header1">여기를 클릭하세요!!</h3>
+  <h3 id="header2">여기를 클릭하세요!!</h3>
+  <h3 id="header3" style="color: red;">여기를 클릭하세요!!</h3>
+</body>
+</html>

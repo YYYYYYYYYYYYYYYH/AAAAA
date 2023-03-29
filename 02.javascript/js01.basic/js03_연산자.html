@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    /*
+    연산자
+
+    1. 4칙연산 : +,-,*,/
+    2. 나머지연산 : %
+    */ 
+    
+    let a = 10+10;
+    console.log(a,typeof(a));
+    a = a - 5;
+    console.log(a,typeof(a));
+    a = a * 5;
+    console.log(a,typeof(a));
+    a= a % 6; //나머지 
+    console.log(a,typeof(a));
+
+
+    const pi = 3.141592;
+    console.log(pi,typeof(pi)); 
+    //자바 스크립트 등의 프로그램언어에서는 정밀한 계산에서 실수연산은 적합하지 않다.
+    let b = 0.1+0.2;
+    console.log(b,typeof(b));
+
+    b = (0.1 *10) + (0.2*10);
+    b = b/10;
+    console.log(b,typeof(b));
+
+    //문자와 숫자의 연산 결과는 ?
+    //문자열의 연산은 더하기 (+) 즉 , 연결 연산자만 가능하다
+    let str = '문자열';
+    let num = 10;
+    let result = str + num;
+    console.log(result,typeof(result));
+
+
+
+    //실습. 두사람의 나이를 입력받아서 결과를 출력해보세요
+    //prompt ,document .write 함수를 이용
+
+
+    //Number , parseInt
+    
+
+
+
+  </script>
+
+  <script>
+    let age1 = prompt("홍길동의 나이");
+    let age2 = prompt("홍길순의 나이");
+    age1= parseInt( age1);
+    age2= parseInt (age2);
+    let aresult = age1 + age2 ;
+    console.log(typeof(age1), typeof(age2),typeof(aresult));
+    document.write(`<h3>홍길동 나이 = ${age1}<h3>`);
+    document.write(`<h3>홍길순 나이 = ${age2}<h3>`);
+    document.write(`<h3>두 사람 나이의 합 = ${aresult}<h3>`);
+    document.write(`<hr>`);
+    
+    
+
+  </script>
+</head>
+<body>
+  <!-- <h1>홍길동의 나이 =  </h1>
+  <h1>홍길순의 나이 = </h1>
+  <h1>두 사람 나이의 합 =</h1>
+  -->
+  <h3 id = "person1"></h3>
+  <h3 class = "person2"></h3>
+  <h3 id = "total"> </h3>
+
+  <script>
+    let person1 = document.querySelector ("#person1");
+    let person2 = document.querySelector (".person2");
+    let total = document.querySelector ("#total");
+
+    person1.innerHTML = `2. 홍길동 나이 = ${age1}`;
+    person2.innerHTML = `2. 홍길순 나이 = ${age2}`;
+    total.innerHTML = `2. 두 사람 나이의 합 = ${aresult}`;
+
+
+
+  </script>
+</body>
+</html>
